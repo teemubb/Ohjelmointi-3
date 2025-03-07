@@ -2,8 +2,8 @@
 
 This project was a simple HTTPS server in Java made for a programming course in university. During the project I learned to make a Java server as well as some basics of Maven build automation.
 
+
 ## Features
--Java HTTPS server backend
 
 - User authentication that only allows authorized registered users to interact with the API.
 
@@ -17,19 +17,9 @@ This project was a simple HTTPS server in Java made for a programming course in 
 
 - All of the data including userdata and data posted by users is saved in a SQL database, which allows it to remain available across different runs of the program.
 
--SSL/TLS...
 
 ## Future improvements
 - Currently, only the user's password is saved in encrypted format into the database. However, it can be easily modified to also encrypt the username for extra security.
 - The SQL queries are vulnerable to SQL injection at the moment. This can and should be fixed by modifying the code to use only prepared statements.
 - Using ai or other methods to autofill descriptions for the locations.
 
-
-Additional features:
-
-
-Feature 6: User can create sightseeing paths with custom tour message,
-
-Feature 7: Sightseeing information can be updated,
-
-Feature 8: Server tracks how many times sightseeing location is "visited"
