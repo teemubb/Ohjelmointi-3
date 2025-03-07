@@ -7,7 +7,9 @@ Coursework for programming 3 course
 -Currently has 4 different endpoints for location information, registration, top 5 visited locations and paths created by users.
 
 -All of these are saved in a SQL database
+
 -Etc
+
 
 Additional features:
 Feature 5: Attach weather when sightseeing information is requested,
