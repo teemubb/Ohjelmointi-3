@@ -1,0 +1,39 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Server",
+            "request": "launch",
+            "mainClass": "Server",
+            "projectName": "simpleserver"
+        },
+        {
+            "type": "java",
+            "name": "TestClient",
+            "request": "launch",
+            "mainClass": "com.tests.TestClient",
+            "projectName": "tests"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Server",
+            "request": "launch",
+            "mainClass": "com.simpleserver.Server",
+            "projectName": "simpleserver",
+            "args": [
+                "C:/Users/Teemu/Desktop/Ohjelmointi 3/server/keystore.jks",
+                "salasana"
+            ]
+        }
+    ]
+}

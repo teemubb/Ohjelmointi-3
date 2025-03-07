@@ -1,0 +1,18 @@
+{
+    "tour_name": "Quick city center run",
+    "tourDescription": "15 minute tour in Oulu",
+    "locations": [
+        {
+            "locationID": "1"
+            
+        },
+        {
+            "locationID": "2"
+            
+        },
+        {
+            "locationID": "3"
+            
+        }
+    ]
+}

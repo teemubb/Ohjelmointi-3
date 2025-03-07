@@ -19,3 +19,7 @@ buildNumber.properties
 # Keystore files
 *.jks
 *.keystore
+
+# Tests & other
+client/
+MyDatabase

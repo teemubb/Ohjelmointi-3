@@ -1,0 +1,7 @@
+{
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.project.sourcePaths": [
+        "server/simpleserver/src/main/java/com/simpleserver",
+        "src/main/java"
+    ]
+}
