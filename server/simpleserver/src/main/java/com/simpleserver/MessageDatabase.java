@@ -176,7 +176,7 @@ public class MessageDatabase{
         // Save weather if given feature 5
         Double weather = message.has("Weather") ? message.getDouble("Weather") : null;
 
-        // Linking values 27.4 MUOKATTU ALKUP= String originalPosterTag = getOriginalPosterTag(originalPoster);
+        // Linking values ALKUP= String originalPosterTag = getOriginalPosterTag(originalPoster);
         String originalPosterTag = originalPoster;
 
         // Insertion message feature 5 muokattu
@@ -344,7 +344,8 @@ public class MessageDatabase{
         return originalPoster;
     }
     
-    /* private String getOriginalPosterTag(String originalPoster) throws SQLException {
+    /* for originalposter, wasn't required
+     private String getOriginalPosterTag(String originalPoster) throws SQLException {
         String originalPosterTag = null;
         String query = "SELECT username FROM users WHERE username = '" + originalPoster + "'";
         try (Statement statement = dbConnection.createStatement()) {

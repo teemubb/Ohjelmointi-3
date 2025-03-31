@@ -35,7 +35,7 @@ public class Weather {
             outputStream.close();
     
             // Response code
-            int responseCode = connection.getResponseCode();
+            //int responseCode = connection.getResponseCode();
     
             // Read response
             BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));

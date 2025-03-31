@@ -46,11 +46,8 @@ class MyHandler implements HttpHandler {
                     int code = 204; // Response code & No Content
                     httpExchange.sendResponseHeaders(code, -1); // -1 Content length & no content
                 } else {
-                    //ALKUP TOIMIVA ALLA, tupla array?
-                /* JSONArray jsonArray = new JSONArray();
-                jsonArray.put(messagesJSON); */
 
-                //TESTATTAVA UUS
+                //Works
                 JSONArray jsonArray = messagesJSON;
 
                 String responseString = jsonArray.toString();
@@ -83,9 +80,9 @@ class MyHandler implements HttpHandler {
 
     private void handleResponse(HttpExchange httpExchange, String errorMessage) throws IOException {
         OutputStream outputStream = httpExchange.getResponseBody();
-        System.out.println("debog1");
+        //System.out.println("debug1");
         httpExchange.sendResponseHeaders(400, errorMessage.length());         // Respond with error code 400
-        System.out.println("debog2");
+        //System.out.println("debug2");
         outputStream.write(errorMessage.getBytes(StandardCharsets.UTF_8)); // Output error message
         
         //close the stream
@@ -150,10 +147,10 @@ class MyHandler implements HttpHandler {
                     }
 
 
-                // Saving original poster
+                // Saving original poster from authenticated user, wasn't required
                 //String originalPoster = httpExchange.getPrincipal().getUsername(); // Fetching authenticated user's name for originalposter
 
-                //scuffed, null = default, annettu = pitäisi olla oma nick
+                //scuffed
                 /* String originalPoster;
                 if (jsonObject.has("originalPoster")) {
                     originalPoster = jsonObject.getString("originalPoster");
@@ -205,7 +202,7 @@ class MyHandler implements HttpHandler {
                         String updatereason = jsonObject.getString("updatereason");
                         long modified = System.currentTimeMillis(); // Modified timestamp
                         
-                        String originalPosterTag = MessageDatabase.getInstance().checkOriginalPoster(locationID);
+                        //String originalPosterTag = MessageDatabase.getInstance().checkOriginalPoster(locationID);
                         // Checking if user updating is same as original poster, wasn't required
                         /* String currentUser = httpExchange.getPrincipal().getUsername();
                         if (currentUser.equals(originalPosterTag)){ */
